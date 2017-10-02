@@ -1,0 +1,203 @@
+/* ------------------------- Start Media Query -------------------------------------- */
+
+/* X Small Screen */
+@media(min-width: 100px) and (max-width: 767px) {
+    
+    /* Start Colors */
+    
+    /* Start Navbar */
+    
+    .navbar-toggle {
+        margin-top: 2px;
+        margin-right: 10px;
+    }
+    
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:focus {
+        background-color: transparent;
+    }
+    
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff;
+        margin: 6px 0;
+    }
+    
+    nav.shrink .navbar-toggle .icon-bar {
+        background-color: #333;
+    }
+    
+    .navbar-default .navbar-nav>li>a {
+        color: #333;
+    }
+    
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+    }
+    
+    .navbar-default .navbar-collapse {
+        background: #FFF;
+        max-width: 300px;
+        margin: auto;
+    }
+    
+    .navbar-toggle .icon-bar {
+        width: 26px;
+    }
+    
+    .navbar-collapse {
+        border: none;
+    }
+    
+    .navbar .navbar-header a img {
+        margin: 24px 10px;
+    }
+    
+    /* Start Header */
+    
+    .home .title h1 {
+        font-size: 41px;
+        margin: 0 0 14px;
+    }
+    
+    .home .title p {
+        font-size: 16px;
+    }
+    
+    .home .slider .slick-prev, 
+    .home .slider .slick-next {
+        font-size: 55px;
+    }
+    
+    .home .slider .slick-prev {
+        left: 10px;
+    }
+    
+    .home .slider .slick-next {
+        right: 10px;
+    }
+    
+    /* Start About */
+    
+    .about .buttons a {
+        margin: 45px auto 16px;
+        display: block;
+    }
+    
+    .about .buttons a:last-of-type {
+        margin-left: auto;
+        margin-bottom: 40px;
+        margin-top: 0;
+    }
+    
+    .about .infos .social-media {
+        margin: 0px 0 38px;
+    }
+    
+    .about .infos .parag p {
+        font-size: 13px;
+    }
+    
+    /* Start Stat */
+    
+    .stat .number {
+        margin: 58px auto 0;
+    }
+    
+    .stat .number:first-of-type {
+        margin-top: 20px;
+    }
+    
+    .stat .number:last-of-type {
+        margin-bottom: 20px;
+    }
+    
+    /* Start Services */
+    
+    .serv .infos div:nth-child(4) p,
+    .serv .infos div:nth-child(5) p {
+        margin-bottom: 45px
+    }
+    
+    /* Start Testim */
+    
+    .testim q {
+        margin: 0 36px 8px;
+    }
+    
+    .testim .quote {
+        display: none;
+    }
+    
+    /* Start Contact */
+    
+    .contact .infos .commun {
+        margin-bottom: 30px
+    }
+    
+    .contact .infos .commun:last-of-type {
+        margin-bottom: 0;
+    }
+    
+    .contact input[type="text"], .contact input[type="email"], .contact textarea {
+        width: 100%
+    }
+    
+    /* Start Colors */
+    
+    .option-box {
+        top: 100px;
+    }
+    
+    .option-box .color-option {
+        width: 178px;
+    }
+    
+    .option-box .gear-check {
+        padding: 8px 11px;
+        font-size: 24px;
+    }
+    
+    .option-box .color-option ul {
+        margin: 8px auto 4px;
+    }
+    
+}
+
+/* Small Screen */
+@media(min-width: 767px) and (max-width: 991px) {
+    
+    .about .buttons {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .about .buttons a {
+        margin:35px auto 0;
+    }
+    
+    /* Start Stat */
+    
+    .stat .number {
+        margin: 25px auto;
+    }
+    
+    /* Start Services */
+    
+    .serv .infos div:nth-child(4) p {
+        margin-bottom: 45px
+    }
+    
+}
+
+/* Medium Screen */
+@media(min-width: 992px) and (max-width: 1199px) {
+    
+    
+    
+}
+
+/* Larg Screen */
+@media(min-width: 1200px) {
+    
+}
+/* ------------------------- End Media Query ---------------------------------------- */		

@@ -1,0 +1,50 @@
+section {
+    background-color: #333;
+}
+
+nav.shrink {
+    background-color: #232323;
+}
+
+.work .show-more,
+.work .show-less,
+.progress .progress-bar:before,
+.about .buttons a:last-of-type,
+.about .infos .title-info p,
+.serv .infos h3,
+.title,
+nav.shrink .navbar-nav>li>a {
+    color: #FFF;
+}
+
+.navbar-default ul.navbar-nav>li>a, .navbar-default ul.navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
+	color: #35b2b3;
+}
+
+.navbar-default ul.navbar-nav>li>a.active{
+	color: #fff;
+}
+
+.serv .infos p,
+.about .infos .parag p,
+.about .infos .info-perso p {
+    color: #ccc;
+}
+
+.navbar .navbar-header a .bg_logo_dark {
+    background-image: url(../images/light-logo.png);
+}
+
+@media (max-width: 767px) and (min-width: 100px) {
+	.navbar-default .navbar-collapse {
+	    background: #232323;
+	}
+
+	.navbar-default .navbar-nav>li>a {
+		color: #FFF;
+	}
+	
+	nav.shrink .navbar-toggle .icon-bar {
+	    background-color: #FFF;
+	}
+}

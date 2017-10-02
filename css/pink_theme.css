@@ -1,0 +1,38 @@
+/********************* START COLORS *********************/
+
+.navbar-collapse ul li.active a,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>li>a.active,
+.home .title h1,
+.about .infos .social-media a,
+.contact .commun span,
+.contact form input,
+footer .social-media a:hover{
+    color: #cc2d50;
+}
+
+.line,
+.progress .progress-bar,
+.about .buttons a:first-of-type,
+.about .buttons a:last-of-type:hover,
+.overlay,
+.swiper-pagination-bullet-active {
+    background-color: #cc2d50!important;
+}
+
+.work .show-more,
+.work .show-less {
+    border: 1px solid #cc2d50;
+}
+
+.about .buttons a {
+    border: 2px solid #cc2d50;
+}
+
+.about .image img {
+    border: 3px solid #cc2d50;
+}
+
+/********************** END COLORS **********************/

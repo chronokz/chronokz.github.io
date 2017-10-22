@@ -43,7 +43,7 @@ $(function () {
         }),
         // Typed Plugin
         typed = new Typed('.type', {
-            strings: ["Frontend Developer.", "Backend Developer.", "Artist."],
+            strings: ["Frontend Developer.", "Backend Developer.", "Artist (Painter)."],
             typeSpeed: 100,
             loop: true,
             backDelay: 1200,

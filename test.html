@@ -9,7 +9,7 @@ const requestParam = {
         var http = new XMLHttpRequest();
         var params = requestParam;
         http.open('POST', url, true);
-        http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        http.setRequestHeader("Content-type", "application/json");
         http.setRequestHeader("Access-Control-Allow-Headers", "*");
         http.setRequestHeader("X-Requested-With", "XMLHttpRequest");
         http.onreadystatechange = function() {

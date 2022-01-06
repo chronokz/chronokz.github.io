@@ -1,0 +1,30 @@
+Test
+<script>
+var url = 'http://113.160.225.76:8771/api/authenticate';
+// var url = 'https://httpbin.org/post'; // it's works
+const requestParam = {
+    "username":"testmycoveuser004@yopmail.com",
+    "password":"Mycove@123"
+};
+//         var http = new XMLHttpRequest();
+//         var params = requestParam;
+//         http.open('POST', url, true);
+//         http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+//         http.setRequestHeader("Access-Control-Allow-Headers", "*");
+//         http.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+//         http.onreadystatechange = function() {
+//             if(http.readyState == 4 && http.status == 200) {
+//                 console.log('http', http);
+//             }
+//         }
+//         http.send(params);
+
+fetch(url, {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json;charset=utf-8',
+    'Access-Control-Allow-Header': '*'
+  },
+  body: JSON.stringify(requestParam)
+});
+</script>

@@ -31,19 +31,9 @@ $(function () {
         smoothScroll = $("nav ul li a"),
         progressBar = $(".progress-bar"),
         scrolltop = $('.scrolltop'),
-        // Initialize Swiper Plugin
-        swiper = new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination',
-            paginationClickable: true,
-            spaceBetween: 30,
-            centeredSlides: true,
-            grabCursor: true,
-            autoplay: 6000,
-            autoplayDisableOnInteraction: false
-        }),
         // Typed Plugin
         typed = new Typed('.type', {
-            strings: ["Frontend Developer.", "Backend Developer.", "Artist (Painter)."],
+            strings: ["Developer", "Frontend Developer", "Backend Developer", "Drawer", "Video Engineer", "Something else..."],
             typeSpeed: 100,
             loop: true,
             backDelay: 1200,

@@ -19,14 +19,11 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/main.css" />
 		<link rel="stylesheet" href="css/responsive.css" />
-		<!-- <link rel="stylesheet" href="css/default_theme.css" /> -->
 		<link rel="stylesheet" href="css/azure_theme.css" />
-		<!-- <link rel="stylesheet" href="css/light_template.css" /> -->
 		<link rel="stylesheet" href="css/dark_template.css" />
 		
 		<!-- Plugins -->
 		<link rel="stylesheet" href="css/lightbox.min.css" />
-		<link rel="stylesheet" href="css/swiper.min.css" />
 		<link rel="stylesheet" href="css/animate.css" />
 		
 		<!-- google Fonts -->
@@ -39,52 +36,10 @@
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 		
-		<script>
-			// Ajax function
-			
-			function _(id) {
-
-				return document.getElementById(id);
-
-			}
-
-			function submitForm() {
-
-				_("btn").disabled = true;
-				_("status").innerHTML = 'please wait ...';
-
-				var formdata = new FormData(),
-					ajax = new XMLHttpRequest();
-
-				formdata.append("name", _("name").value);
-				formdata.append("email", _("email").value);
-				formdata.append("subj", _("subj").value);
-				formdata.append("msg", _("msg").value);
-
-				ajax.open("POST", "contact.php");
-				ajax.onreadystatechange = function () {
-
-					if (ajax.readyState === 4 && ajax.status === 200) {
-
-						if (ajax.responseText === "success") {
-
-							_("my_form").innerHTML = '<h2>Thanks ' + _("name").value + ',<br> <br> your message has been sent.</h2>';
-
-						} else {
-
-							_("status").innerHTML = ajax.responseText;
-							_("btn").disabled = false;
-
-						}
-					}
-				};
-
-				ajax.send(formdata);
-			}
-		</script>
 	</head>
 	<body>
 		
+		<!-- Start Navbar -->
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
@@ -95,12 +50,6 @@
 					<span class="icon-bar"></span>
 				  </button>
 				  <a class="navbar-brand" href="http://chronokz.github.io">chronokz.github.io</a>
-				  <!--
-				  <a href="#">
-					  <span class="bg_logo"></span>
-					  Logo
-				  </a>
-					-->
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
@@ -110,7 +59,6 @@
 				</div>
 			</div>
 		</nav>
-		
 		<!-- End Navbar -->
 		
 		
@@ -119,8 +67,10 @@
 			<div class="overlay-home">
 				<div id="particles-js" class="particles">
 					<div class="title text-center">
-						<h1>I am Alexandr Mikhailov</h1> <!-- Here The Title Of Template -->
-						<p class="type"></p> <!-- You Can Edit the title on the custom.js File -->
+						<h1><span class="greetings">Greetings!</span>
+							I'm Alexandr Mikhailov</h1> <!-- Here The Title Of Template -->
+						<p>and I'm a...</p>
+						<p class="type"></p>
 					</div>
 				</div>
 			</div>
@@ -144,13 +94,13 @@
 									<p>Profile</p>
 								</div>
 								<div class="col-xs-9 info-perso">
-									<p>Universal Frontend & Backend Developer</p>
+									<p>Universal Frontend & Backend Developer & Something more...</p>
 								</div>
 								<div class="col-xs-3 title-info">
 									<p>Email</p>
 								</div>
 								<div class="col-xs-9 info-perso">
-									<p>chrono@smtp.ru</p>
+									<p>chronokz@yandex.kz</p>
 								</div>
 								<div class="col-xs-3 title-info">
 									<p>Skills</p>
@@ -165,6 +115,8 @@
 										<a href="https://www.w3schools.com/html/html_xhtml.asp" target="_blank">XHTML</a>
 										<a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
 										<a href="http://getkickstart.com/" target="_blank">Kickstart / Kickstrap</a>
+										<a href="https://www.telerik.com/kendo-ui" target="_blank">Kendo</a>
+										<a href="https://material.angular.io/" target="_blank">Angular Material</a>
 										<br>
 										<strong>CSS:</strong>
 										<a href="http://stylus-lang.com/" target="_blank">Stylus</a>
@@ -177,12 +129,17 @@
 										<br>
 										<strong>JS:</strong>
 										<a href="https://www.w3schools.com/Js/" target="_blank">JavaScript</a>
-										<a href="http://coffeescript.org/" target="_blank">Coffee-Script</a>
+										<a href="http://coffeescript.org/" target="_blank">CoffeeScript</a>
 										<a href="https://jquery.com/" target="_blank">jQuery</a>
 										<a href="http://jqueryui.com/" target="_blank">jQuery UI</a>
 										<a href="http://qunitjs.com/" target="_blank">QUnit</a>
 										<a href="https://vuejs.org/" target="_blank">Vue.js</a>
+										<a href="https://reactjs.org/" target="_blank">React</a>
 										<a href="https://angularjs.org/" target="_blank">Angular.js</a>
+										<a href="https://angular.io" target="_blank">Angular</a>
+										<a href="https://nodejs.org/en/" target="_blank">Node.js</a>
+										<a href="https://underscorejs.org/" target="_blank">Underscore.js</a>
+										<a href="https://rxjs-dev.firebaseapp.com/" target="_blank">RxJS</a>
 										<br>
 										<strong>Console:</strong>
 										<a href="https://gulpjs.com/" target="_blank">Gulp</a>
@@ -190,6 +147,8 @@
 										<a href="https://coderwall.com/p/g7afnw/nib-css-mixins-for-stylus-js" target="_blank">Nib</a>
 										<a href="http://compass-style.org/" target="_blank">Compass</a>
 										<a href="https://getcomposer.org/" target="_blank">Composer</a>
+										<a>CMD</a>
+										<a>Bash</a>
 										<br>
 										<strong>PHP:</strong>
 										<a href="http://php.net/" target="_blank">PHP</a>
@@ -200,7 +159,7 @@
 										<a href="https://www.1c-bitrix.ru/" target="_blank">Bitrix</a>
 										<a href="https://dle-news.ru/" target="_blank">DLE</a>
 										<br>
-										<strong>Phyton (*new):</strong>
+										<strong>Phyton:</strong>
 										<a href="https://www.python.org" target="_blank">Phyton</a>
 										<a href="https://www.djangoproject.com" target="_blank">Django</a>
 										<a href="https://www.django-cms.org/" target="_blank">Django CMS</a>
@@ -208,7 +167,8 @@
 										<strong>Database:</strong>
 										<a href="https://en.wikipedia.org/wiki/SQL" target="_blank">SQL</a>
 										<a href="https://www.mysql.com/" target="_blank">MySQL</a>
-										<a href="https://ru.wikipedia.org/wiki/Microsoft_SQL_Server" target="_blank">MSSQL</a>
+										<a href="https://mariadb.org/" target="_blank">MariaDB</a>
+										<a href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads" target="_blank">MSSQL</a>
 										<a href="http://sphinxsearch.com/" target="_blank">Sphinx</a>
 										<a href="http://memcached.org/" target="_blank">Memcached</a>
 										<br>
@@ -216,29 +176,50 @@
 										<a href="https://git-scm.com/" target="_blank">Git</a>
 										<a href="https://tortoisesvn.net/" target="_blank">SVN</a>
 										<a href="https://rvm.io/" target="_blank">RVM</a>
+										<a href="http://phpbrew.github.io/phpbrew/" target="_blank">NVM</a>
 										<a href="http://phpbrew.github.io/phpbrew/" target="_blank">PHPBrew</a>
-										<strong>Worked with API:</strong>
+										<strong>APIs:</strong>
 										<a href="https://developers.google.com/products/" target="_blank">Google</a>
+										<a href="https://developers.google.com/products/" target="_blank">Google Drive</a>
+										<a href="https://developers.google.com/products/" target="_blank">Google Maps</a>
 										<a href="https://tech.yandex.ru/" target="_blank">Yandex</a>
+										<a href="https://tech.yandex.ru/" target="_blank">Yandex Maps</a>
 										<a href="https://developer.valvesoftware.com/wiki/Steam_Web_API" target="_blank">Steam</a>
 										<a href="https://stripe.com/" target="_blank">Stripe</a>
+										<a href="https://youtube.com/" target="_blank">Youtube</a>
+										<a href="https://restfulapi.net/" target="_blank">REST</a>
 										<strong>Game Development:</strong>
 										<a href="https://www.yoyogames.com/" target="_blank">Game Maker [GML]</a>
 										<a href="https://www.renpy.org/" target="_blank">RenPy</a>
-										<strong>Artist:</strong>
-										<a href="" target="_blank">Simple Pencil</a>
+										<strong>Desktop Dev:</strong>
+										<a href="http://ds.develnext.org/" target="_blank">Devel Next</a>
+										<a href="https://dotnet.microsoft.com/en-us/languages/csharp" target="_blank">C#</a>
+										<a href="https://www.embarcadero.com/products/delphi" target="_blank">Delphi</a>
+										<strong>Drawer:</strong>
+										<a href="" target="_blank">Pencil</a>
 										<a href="" target="_blank">Graphite Pencil</a>
 										<a href="http://systemax.jp/en/sai/" target="_blank">Paint Tool Sai</a>
-										<a href="http://www.adobe.com/products/photoshop.html" target="_blank">Photoshop</a>
+										<a href="http://www.adobe.com/products/photoshop.html" target="_blank">Adobe Photoshop</a>
+										<strong>Montage:</strong>
+										<a href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank">Blackmagic Davinci Resolve</a>
+										<a href="https://www.movavi.com/" target="_blank">Movavi Video Editor</a>
 										<strong>Sports:</strong>
-										<a target="_blank">Run</a>
-										<a target="_blank">Bicycle Rider</a>
-										<a target="_blank"><s>Down</s>Uphill</a>
-										<strong>On learning:</strong>
-										<a href="https://reactjs.org/" target="_blank">ReactJS</a>
-										<a href="https://v2.angular.io" target="_blank">Angular 2</a>
-										<a href="https://golang.org/" target="_blank">GO lang</a>
+										<a>Run</a>
+										<a>Bicycle</a>
+										<strong>Going to get knowledge:</strong>
+										<a href="https://www.salesforce.com" target="_blank">Sales Force</a>
+										<a href="https://unity.com" target="_blank">Unity</a> or
+										<a href="https://www.unrealengine.com" target="_blank">Unreal Engine</a>
 									</div>
+								</div>
+								<div class="col-sm-3"></div>
+								<div class="col-sm-9 bottom-text">
+									<p>
+										I'm pretty sure that I forgot something...<br>
+										Just ask me what you are interested in what I may have forgotten to write.<br>
+										It's hard to keep in mind all that I know...<br>
+										...as well as reading everything that is not interesting.
+									</p>
 								</div>
 							</div>
 						</div>
@@ -250,7 +231,6 @@
 							</div>
 
 							<div class="text-center">
-								<!-- <a href="#">Download Resume</a> -->
 								<a class="btn btn-theme" href="http://upwork.com/freelancers/~0180ab2160409e51fd" target="_blank">Hire Me</a>
 							</div>
 						</div>
@@ -272,8 +252,8 @@
 					<div class="social-media">
 						<a href="https://github.com/chronokz" target="_blank"><i class="fa fa-github"></i></a>
 						<a href="https://bitbucket.org/chronokz/" target="_blank"><i class="fa fa-bitbucket"></i></a>
-						<a href="https://www.facebook.com/chronokz target="_blank"><i class="fa fa-facebook"></i></a>
-						<a href="skype:chrono.coder?userinfo"><i class="fa fa-skype"></i></a>
+						<a href="https://t.me/chronovn" target="_blank"><i class="fa fa-telegram"></i></a>
+						<a href="mailto:chronokz@yandex.kz" target="_blank"><i class="fa fa-email"></i></a>
 					</div>
 				</footer>
 				<!-- End Footer -->
@@ -308,7 +288,6 @@
 		<script src="js/lightbox.min.js"></script>
 		<script src="js/typed.js"></script>
 		<script src="js/jquery.counterup.min.js"></script>
-		<script src="js/swiper.min.js"></script>
 		<script src="js/wow.min.js"></script>
 		<script src="js/particles.min.js"></script>
 		<script src="js/jquery.nicescroll.js"></script>

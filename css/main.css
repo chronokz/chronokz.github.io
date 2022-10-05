@@ -280,7 +280,6 @@ nav.shrink .navbar-nav>li>a {
     text-shadow: -1px 2px 8px #2d3541;
     text-shadow: -1px 2px 8px rgba(45,53,65,0.6);
     text-align: center;
-    margin: 0 0 23px;
 }
 
 .home .title p {
@@ -1430,4 +1429,15 @@ footer .copyright p:last-of-type {
 .tags strong{
     display: block;
     padding-top: 5px;
+}
+
+.greetings {
+    color: #fff;
+    display: block;
+}
+
+.bottom-text {
+    color: wheat;
+    font-style: italic;
+    margin-top: 25px;
 }
